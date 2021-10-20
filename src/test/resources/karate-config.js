@@ -4,6 +4,6 @@ function fn() {
     apiPath : '/',
     expectedText: '(_!_)',
     stand: "default",
-    responseCode: 200,
+    responseCode: karate.properties['override.responseCode'] || 200,
   };
 }

@@ -7,6 +7,6 @@ public class ExampleRun {
 
     @Karate.Test
     Karate testExample() {
-        return new Karate().feature("example").relativeTo(getClass());
+        return Karate.run("example").relativeTo(getClass());
     }
 }
